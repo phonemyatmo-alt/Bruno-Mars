@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****共通部分
+***********************************************/
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black ;
+}
+
+/*****ヘッダー*****/
+.header {
+  line-height: 100px;
+  margin-left: 650px;
+  display: flex;
+}
+.header h1 {
+  color:antiquewhite;
+  font-size: 40px;
+}
+
+/*****メインビジュアル*****/
+.main-visual {
+  width: 100%;
+}
+.main-visual-image {
+  width: 1040px;
+  margin: 0 auto;
+}
+.main-visual-image img {
+  width: 100%;
+  /* 画像下の隙間調整 */
+  padding: 20px;
+}
+
+/*****ナビゲーション*****/
+.main-navigation {
+  width: 100%;
+  margin: auto;
+  /*background-color: rgba(229, 1, 18, 0.8);*/
+}
+.main-navigation ul {
+  margin: auto;
+  width: 1040px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.main-navigation ul li {
+  width: 25%;
+  text-align: center;
+}
+.main-navigation a {
+  padding: 10px;
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  transition: all 0.2s;
+  text-decoration:none;
+}
+.main-navigation a:hover {
+  
+  color: #eb0037;
+  transition: all 0.4s;
+}
+
+/*****フッター*****/
+.footer {
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  padding:  40px 20px;
+  color: #fff;
+  font-size: 12px;
+}
+.footer .footer-links {
+  margin-bottom: 15px;
+}
+
+.footer .footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5em;
+}
+
+.footer .footer-links a:hover {
+  color:  #eb0037;
+}
+
+.footer .social-icons {
+  margin-bottom: 15px;
+}
+
+.footer .social-icons a {
+  color: white;
+  margin: 0 8px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #eb0037;
+}
+
+.footer .copyright {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/***** video******/
+.video-section {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: beige;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.video-card h3 {
+  margin-top: 12px;
+  font-size: 1rem;
+}
+
+.video-card h3 a {
+  text-decoration: none;
+  color: beige;
+  transition: color 0.3s ease;
+}
+/* video end */
+
+/**** profile *****/
+.profile {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.profile h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family:'Courier New', Courier, monospace, sans-serif;
+  margin-bottom: 30px;
+  color: beige;
+}
+
+.profile p {
+  margin-bottom: 20px;
+  color: beige;
+  text-align: justify; 
+}
+/**profile end**/
+
+/*** news****/
+.news {
+    max-width: 50%;
+    margin: 40px auto;
+    padding: 0 60px;
+}
+
+.news h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: beige;
+    text-align: center;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.news-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 30px;
+}
+
+.news-img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-title a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: beige;
+}
+
+.news-date {
+    display: block;
+    font-size: 0.9rem;
+    color: beige;
+    margin-top: 8px;
+}
+/*** news end***/
+
+/*** discography***/
+.section {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 20px;
+    border: 2px solid beige;   /* black box around each album */
+    border-radius: 8px;       /*rounded corners */
+    background-color: black;
+    color: beige;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid beige; /* line under album title */
+}
+
+.item {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.item-left {
+    flex: 1;
+    max-width: 300px;
+}
+
+.item-left img {
+    width: 100%;
+    height: auto;
+    padding-left: 40px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.item-left p {
+  margin-left: 20px;
+  font-size: 0.9rem;
+  color: beige;
+}
+
+.item-right {
+    flex: 2;
+}
+
+.item-right ul {
+    list-style-type: decimal;
+    letter-spacing: 3px;
+    padding-left: 150px;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+/*** disconography end***/
